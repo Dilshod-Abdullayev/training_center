@@ -2,7 +2,6 @@ import { createSlice } from "@reduxjs/toolkit";
 interface ThemeState {
     value: boolean;
 }
-
 const initialState: ThemeState = {
     value: true,
 }
