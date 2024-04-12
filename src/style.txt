@@ -1,0 +1,13 @@
+light mode 
+
+text-colors:
+
+
+text-sizes:
+
+
+bg-colors:
+
+
+
+dark mode
