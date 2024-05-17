@@ -41,13 +41,13 @@ const FAQ: React.FC = () => {
     };
 
     return (
-        <div>
-            <h1 style={{ backgroundColor: '#FDCB00' }} className='w-full p-12 rounded-2xl text-2xl text-white font-extrabold h-auto'><span className='text-sky-500'>FAQ</span>:o'quv markaziga ta'lim bo'yicha beriladigan eng ommabop savollar</h1>
+        <div className="px-4 md:px-8">
+            <h1 style={{ backgroundColor: '#FDCB00' }} className='w-full p-6 md:p-12 rounded-2xl text-lg md:text-2xl text-white font-extrabold'><span className='text-sky-500'>FAQ</span>: o'quv markaziga ta'lim bo'yicha beriladigan eng ommabop savollar</h1>
             <div className="max-w-2xl mx-auto">
                 {faqs.map((faq, index) => (
-                    <div key={index} className="my-8">
+                    <div key={index} className="my-4 md:my-8">
                         <motion.div
-                            className="flex justify-between items-center text-xl select-none text-sky-500 font-extrabold text-center cursor-pointer"
+                            className="flex justify-between items-center text-base md:text-lg select-none text-sky-500 font-extrabold text-center cursor-pointer"
                             onClick={() => toggleFAQ(index)}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -62,12 +62,12 @@ const FAQ: React.FC = () => {
                             animate={{ height: faq.open ? 'auto' : 0 }}
                             transition={{ duration: 0.3 }}
                         >
-                            <p className="text-gray-700 text-base leading-7 font-medium">{faq.answer}</p>
+                            <p className="text-gray-700 text-sm md:text-base leading-6 md:leading-7 font-medium">{faq.answer}</p>
                         </motion.div>
                     </div>
                 ))}
                 <div className="flex items-center justify-center mt-8">
-                    <FaQuestionCircle className="text-sky-500 text-5xl" />
+                    <FaQuestionCircle className="text-sky-500 text-4xl md:text-5xl" />
                 </div>
             </div>
         </div>
