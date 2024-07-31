@@ -6,22 +6,23 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
-  const navbarRef = useRef(null);
+  const navbarRef = useRef<HTMLDivElement>(null); // Specify the type here
 
   const handleNav = () => {
     setNav(!nav);
   };
+
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
         setNav(false);
       }
     };
     window.addEventListener('click', handleClickOutside);
     return () => {
       window.removeEventListener('click', handleClickOutside);
-    }
-  })
+    };
+  }, []);
   return (
     <div className={`dark:bg-slate-950 fixed top-0 left-0 w-full z-50 bg-white shadow-md transition-all duration-300 ${nav ? 'h-auto' : 'h-auto'}`}>
       <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-4">

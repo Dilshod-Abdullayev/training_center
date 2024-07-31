@@ -2,7 +2,7 @@ import React from 'react';
 import { CiLight } from "react-icons/ci";
 import { FaRegMoon } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
-import { RootState } from './store';
+import { RootState } from '../../redux/store';
 import { toggleTheme } from '@/redux/action/ThemeAction';
 
 export default function Mode() {

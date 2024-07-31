@@ -1,17 +1,21 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
-export default function page() {
+export default function Page() {
     return (
         <div>
-            <div className="container  my-24 mx-auto md:px-6">
+            <div className="container my-24 mx-auto md:px-6">
                 <section className="mb-32 text-center md:text-left">
-                    <h1 className='font-extrabold text-sky-500 text-center text-2xl w-full'>Qaynoqqina yangilikar!</h1>
-                    <div className='mt-12'>
+                    <h1 className="font-extrabold text-sky-500 text-center text-2xl w-full">Qaynoqqina yangilikar!</h1>
+                    <div className="mt-12">
                         <div className="mb-6 flex flex-wrap">
                             <div className="mb-6 ml-auto w-full shrink-0 grow-0 basis-auto px-3 md:mb-0 md:w-3/12">
                                 <div className="relative mb-6 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
                                     data-te-ripple-init data-te-ripple-color="light">
-                                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg" className="w-full" alt="Louvre" />
+                                    <Image 
+                                    width={500}
+                                    height={500}
+                                    src="https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg" className="w-full" alt="Louvre" />
                                     <div
                                         className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]">
                                     </div>
@@ -19,8 +23,7 @@ export default function page() {
                             </div>
                             <div className="mb-6 cursor-pointer mr-auto w-full shrink-0 grow-0 basis-auto px-3 md:mb-0 md:w-9/12 xl:w-7/12">
                                 <h5 className="mb-3 text-lg font-bold">Welcome to California</h5>
-                                <div
-                                    className="mb-3 flex items-center justify-center text-sm font-medium text-danger dark:text-danger-500 md:justify-start">
+                                <div className="mb-3 flex items-center justify-center text-sm font-medium text-danger dark:text-danger-500 md:justify-start">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
                                         stroke="currentColor" className="mr-2 h-5 w-5">
                                         <path strokeLinecap="round" strokeLinejoin="round"

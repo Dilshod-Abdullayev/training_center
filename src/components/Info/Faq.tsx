@@ -42,7 +42,7 @@ const FAQ: React.FC = () => {
 
     return (
         <div className="px-4 md:px-8">
-            <h1 style={{ backgroundColor: '#FDCB00' }} className='w-full p-6 md:p-12 rounded-2xl text-lg md:text-2xl text-white font-extrabold'><span className='text-sky-500'>FAQ</span>: o'quv markaziga ta'lim bo'yicha beriladigan eng ommabop savollar</h1>
+            <h1 style={{ backgroundColor: '#FDCB00' }} className='w-full p-6 md:p-12 rounded-2xl text-lg md:text-2xl text-white font-extrabold'><span className='text-sky-500'>FAQ</span>: o&apos;quv markaziga ta&apos;lim bo&apos;yicha beriladigan eng ommabop savollar</h1>
             <div className="max-w-2xl mx-auto">
                 {faqs.map((faq, index) => (
                     <div key={index} className="my-4 md:my-8">
